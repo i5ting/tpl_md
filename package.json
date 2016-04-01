@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nvm use 4 && nrm use npm && npm publish .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
