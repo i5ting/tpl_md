@@ -1,6 +1,6 @@
 # tpl_md
 
-comple markdown(using marked) with tpl
+compile markdown(using marked) with tpl
 
 ## Install
 
