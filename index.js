@@ -12,11 +12,7 @@ console.log = function (str) {
   _log(str);
 }
 
-module.exports = function(markdown, theme, dest_file_name, template, marked_option) {
-  if (theme) {
-    config.theme = theme
-  }
-  
+module.exports = function(markdown, dest_file_name, template, marked_option) {
   if (!dest_file_name) {
     setMarkdown(markdown)
   } else {
