@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>i5ting</title>
+    <link type="text/css" rel="stylesheet" href="github/assets/css/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="github/assets/css/pilcrow.css">
+    <link type="text/css" rel="stylesheet" href="github/assets/css/hljs-github.min.css"/>
+  </head>
+  <body>
+    <article class="markdown-body">
+      <h1 id="tpl_md">tpl_md</h1>
+<p>compile markdown(using marked) with tpl</p>
+<h2 id="install">Install</h2>
+<pre><code>npm i -S tpl_md
+</code></pre><h2 id="usages">Usages</h2>
+<pre><code>var tpl_md = require(&#39;tpl_md&#39;)
+
+
+// way 0
+tpl_md(&#39;markdown_file_name&#39;)
+
+// way 1
+tpl_md( &#39;markdown_file_name&#39;,&#39;theme—github&#39;)
+
+// way 2
+tpl_md( &#39;markdown_file_name&#39;, &#39;theme—github&#39;, &#39;dest_file_name&#39;)
+
+// way 3
+tpl_md(&#39;markdown_file_name&#39; ,&#39;theme—github&#39;, &#39;dest_file_name&#39;,  &#39;template_file_name&#39;)
+
+// way 4
+tpl_md(&#39;markdown_file_name&#39; ,&#39;theme—github&#39;, &#39;dest_file_name&#39;, &#39;template_file_name&#39;, {
+  gfm: true,
+   tables: true,
+   breaks: false,
+   pedantic: false,
+   sanitize: true,
+   smartLists: true,
+   smartypants: false
+})
+</code></pre><h2 id="mac-key-">Mac键盘key说明</h2>
+<p>大部分人都记不住这些按键，下面给出说明</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Symbol</th>
+<th style="text-align:center">Key</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&#8984;</td>
+<td style="text-align:center">Command Key</td>
+</tr>
+<tr>
+<td style="text-align:center">&#8963;</td>
+<td style="text-align:center">Control Key</td>
+</tr>
+<tr>
+<td style="text-align:center">&#8997;</td>
+<td style="text-align:center">Option Key</td>
+</tr>
+<tr>
+<td style="text-align:center">&#8679;</td>
+<td style="text-align:center">Shift Key</td>
+</tr>
+</tbody>
+</table>
+
+    </article>
+  </body>
+</html>

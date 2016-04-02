@@ -9,10 +9,14 @@ config.tpl_path = __dirname + "/tpl.html";
 var _log = console.log;
 
 console.log = function (str) {
-  // _log(str);
+  _log(str);
 }
 
-module.exports = function(markdown, dest_file_name, template, marked_option) {
+module.exports = function(markdown, theme, dest_file_name, template, marked_option) {
+  if (theme) {
+    config.theme = theme
+  }
+  
   if (!dest_file_name) {
     setMarkdown(markdown)
   } else {
@@ -30,7 +34,10 @@ module.exports = function(markdown, dest_file_name, template, marked_option) {
   console.log(config)
 
   generate()
+  
+  require('./copy')(config);
 }
+
 
 /**
  * 生成
@@ -39,8 +46,12 @@ function generate () {
   var md = getMarkdown()
   
   tpl.tpl_apply(config.tpl_path, {
-      markdown_compiled: md
+    title:"i5ting",
+    asset: config.theme + "/assets",
+    markdown_compiled: md
   }, config.markdown_output);
+  
+  //copy from "./layouts/" + config.theme 到当前目录
 }
 
 /**

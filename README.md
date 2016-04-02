@@ -18,13 +18,16 @@ var tpl_md = require('tpl_md')
 tpl_md('markdown_file_name')
 
 // way 1
-tpl_md( 'markdown_file_name','dest_file_name')
+tpl_md( 'markdown_file_name','theme—github')
 
 // way 2
-tpl_md('markdown_file_name', 'dest_file_name',  'template_file_name')
+tpl_md( 'markdown_file_name', 'theme—github', 'dest_file_name')
 
 // way 3
-tpl_md('markdown_file_name', 'dest_file_name', 'template_file_name', {
+tpl_md('markdown_file_name' ,'theme—github', 'dest_file_name',  'template_file_name')
+
+// way 4
+tpl_md('markdown_file_name' ,'theme—github', 'dest_file_name', 'template_file_name', {
   gfm: true,
    tables: true,
    breaks: false,
@@ -34,6 +37,26 @@ tpl_md('markdown_file_name', 'dest_file_name', 'template_file_name', {
    smartypants: false
 })
 ```
+
+## 主题
+
+- bootstrap3
+- github
+- jasonm23-dark
+- jasonm23-foghorn
+- jasonm23-markdown
+- jasonm23-swiss
+- markedapp-byword
+- mixu-book
+- mixu-bootstrap
+- mixu-bootstrap-2col
+- mixu-gray
+- mixu-page
+- mixu-radar
+- roryg-ghostwriter
+- thomasf-solarizedcssdark
+- thomasf-solarizedcsslight
+- witex
 
 
 ## Mac键盘key说明
